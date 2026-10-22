@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "DaysOne";
+    src: url("../font/DaysOne-Regular.ttf"),
+        url("../fuentes/DaysOne-Regular.ttf"),
+        url("../fonts/DaysOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TrajanBold";
+    src: url("../font/trajan-pro.bold.ttf"),
+        url("../fuentes/trajan-pro.bold.ttf"),
+        url("../fonts/trajan-pro.bold.ttf");
+}
+
+@font-face {
+    font-family: "TrajanRegular";
+    src: url("../font/trajan-pro-regular.ttf"),
+        url("../fuentes/trajan-pro-regular.ttf"),
+        url("../fonts/trajan-pro-regular.ttf");
+}
+
+@font-face {
+    font-family: "Redes";
+    src: url("../font/grunge social media.ttf"),
+        url("../fuentes/grunge social media.ttf"),
+        url("../fonts/grunge social media.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f2fb;
+    color: #484763;
+    font-family: TrajanRegular, Georgia, serif;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: TrajanBold, Georgia, serif;
+}
+
+/*-------------NAV----------------*/
+.navbar {
+    background-color: 3#484763;
+    font-family: DaysOne, Arial, sans-serif;
+}
+
+.logotipo {
+    width: 65px;
+}
+
+.nav-link {
+    color: #C3C0E0;
+}
+
+.nav-link:hover {
+    color: #DAB51B;
+}
+
+/*-------------Botones----------------*/
+.boton {
+    display: inline-block;
+    font-family: TrajanRegular, Georgia, serif;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #532EA6;
+    border: 2px solid #532EA6;
+    border-radius: 10px;
+    padding: 8px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    color: #484763;
+    background-color: #DAB51B;
+    border-color: #DAB51B;
+    box-shadow: 0 0 15px #DAB51B;
+}
+
+.btn-regreso {
+    background-color: #532EA6;
+    border-color: #532EA6;
+}
+
+.btn-regreso:hover {
+    color: #484763;
+    background-color: #DAB51B;
+    border-color: #DAB51B;
+    box-shadow: 0 0 15px #DAB51B;
+}
+
+/*-------------Inicio----------------*/
+#inicio {
+    background-image: linear-gradient(180deg, #b3ebff 0, #5389f2 50%, #003164 100%);
+    min-height: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 50px;
+    color: #003164;
+}
+
+.perfil {
+    width: 320px;
+    border: 8px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 10px 10px 20px #00224a;
+}
+
+/*-------------Glassmorfismo y Claymorfismo----------------*/
+.glass {
+    background-color: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 49, 100, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.clay {
+    background-color: #C3C0E0;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #a9a6c9, -10px -10px 20px #ffffff;
+}
+
+.clay:hover {
+    box-shadow: 14px 14px 26px #a9a6c9, -10px -10px 20px #ffffff;
+}
+
+.clay .card-img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+/*-------------Secciones----------------*/
+.titulo {
+    font-size: 2.5rem;
+    color: #532EA6;
+    text-shadow: 2px 2px 4px #C3C0E0;
+}
+
+#proyectos,
+#medios {
+    background-color: #e6e2f5;
+}
+
+.card-title,
+#quien h3,
+#medios h3 {
+    color: #532EA6;
+}
+
+.material-symbols-outlined {
+    color: #DF0610;
+    vertical-align: middle;
+}
+
+#carrusel img {
+    height: 450px;
+}
+
+.carousel-caption {
+    background-color: rgba(72, 71, 99, 0.75);
+    border-radius: 10px;
+}
+
+.medio {
+    width: 100%;
+    height: 230px;
+    background-color: #003164;
+}
+
+audio {
+    width: 100%;
+}
+
+.modal-content {
+    background-color: #C3C0E0;
+}
+
+/*-------------Contacto----------------*/
+#contacto {
+    background-image: linear-gradient(180deg, #C3C0E0 0, #532EA6 100%);
+    color: #1f1d36;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    font-family: TrajanRegular, Georgia, serif;
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+#formulario input:focus,
+#formulario select:focus,
+#formulario textarea:focus {
+    outline: 0;
+    background-color: #484763;
+    color: #ffffff;
+}
+
+#mapa {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/*-------------Footer----------------*/
+.pie {
+    background-color: #484763;
+    color: #ffffff;
+    font-family: DaysOne, Arial, sans-serif;
+    padding: 20px 30px;
+    border-top: 4px solid #DAB51B;
+}
+
+#redes,
+#derechos {
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#derechos {
+    text-align: right;
+}
+
+.icono {
+    font-family: Redes, cursive;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.icono:hover {
+    color: #DAB51B;
+}
