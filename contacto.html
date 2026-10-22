@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alonso Martínez Pérez">
+    <meta name="description" content="Página de contacto del portafolio personal con formulario y mapa de ubicación.">
+    <meta name="keywords" content="contacto, portafolio personal, formulario, mapa, Bootstrap">
+    <title>Contacto | Portafolio personal</title>
+    <link rel="shortcut icon" href="iconos/favicon (3).ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on,mail,music_note,palette,play_circle,school,token" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg py-0 navbar-dark bg-secondary fixed-top">
+        <nav class="container">
+            <a class="navbar-brand" href="index.html#inicio">
+                <img src="imagenes/logo (1).png" alt="Logo" class="d-inline-block align-text-middle logotipo">
+                Portafolio personal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#inicio">Inicio</a>
+                    <a class="nav-link" href="index.html#quien">¿Quién soy?</a>
+                    <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                    <a class="nav-link" href="index.html#galeria">Galería</a>
+                    <a class="nav-link" href="index.html#medios">Medios</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contacto" class="pt-5 pb-5">
+        <article class="container pt-5">
+            <article class="text-center mb-4" data-aos="fade-down">
+                <h1 class="titulo">Contacto</h1>
+                <p>Si quieres dejar un comentario sobre algún ejercicio o proyecto, puedes usar este formulario.</p>
+            </article>
+
+            <div class="row">
+                <form id="formulario" action="" class="col-lg-5 glass p-4 mb-4" data-aos="fade-right">
+                    <h2><span class="material-symbols-outlined">mail</span> Envíame un mensaje</h2>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="ej. Nombre" required>
+                    <label for="nombre">Apellidos</label>
+                    <input type="text" id="apellidos" placeholder="ej. Pérez García" required>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="nombre@correo.com" required>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto">
+                        <option>Comentario</option>
+                        <option>Proyecto</option>
+                        <option>Pregunta</option>
+                        <option>Otro</option>
+                    </select>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" placeholder="ej. Te quería contar acerca de un proyecto... mi contacto es..." required></textarea>
+                    <button type="submit" class="boton">Enviar mensaje</button>
+                </form>
+
+                <article class="col-lg-6 offset-lg-1 clay p-4 mb-4" data-aos="fade-left">
+                    <h2><span class="material-symbols-outlined">location_on</span> Ubicación</h2>
+                    <p>Universidad Tecnológica de León · León, Guanajuato</p>
+                    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.226421618486!2d-101.58422372495511!3d21.063617080594472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b963652f40f0d%3A0xa7d88da0ad8eff8a!2sUniversidad%20Tecnol%C3%B3gica%20de%20Le%C3%B3n!5e0!3m2!1ses-419!2smx!4v1792360031379!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </article>
+            </div>
+
+            <p class="text-center mt-3">
+                <a href="index.html" class="btn btn-primary btn-regreso">Volver a mi portafolio</a>
+            </p>
+        </article>
+    </section>
+
+    <footer class="pie">
+        <span id="redes">
+            <a href="https://www.facebook.com" class="icono">N</a>
+            <a href="https://www.instagram.com" class="icono">A</a>
+            <a href="https://www.youtube.com" class="icono">I</a>
+        </span>
+        <span id="derechos">Copyright © 2026 Alonso Martínez Pérez</span>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
